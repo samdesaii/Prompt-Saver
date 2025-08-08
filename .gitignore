@@ -1,0 +1,28 @@
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build artifacts
+/dist/
+/build/
+/coverage/
+
+# Node
+/node_modules/
+
+# Env
+.env
+.env.*
+
+# VS Code
+.vscode/
+
+# Packed extensions
+*.zip
+*.crx

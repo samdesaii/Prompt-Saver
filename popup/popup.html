@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="popup.css" />
+  <title>Prompt Saver</title>
+</head>
+<body>
+  <header>
+    <input id="search" type="search" placeholder="Search prompts" />
+    <select id="scope">
+      <option value="this">This chat</option>
+      <option value="global">Global</option>
+      <option value="all">All</option>
+    </select>
+  </header>
+
+  <!-- New paste-and-save area -->
+  <section id="addBox">
+    <textarea id="newPromptText" rows="3" placeholder="Paste your prompt here..."></textarea>
+    <div class="row">
+      <button id="savePasted">Save prompt</button>
+      <a href="../options/options.html" target="_blank">Export/Import</a>
+    </div>
+  </section>
+
+  <main id="list"></main>
+
+  <!-- Removed old footer with 'Save current box' -->
+  <script type="module" src="popup.js"></script>
+</body>
+</html>
